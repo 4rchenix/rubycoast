@@ -7,6 +7,17 @@ require 'fast_gettext'
 # Classes
 require_relative 'Classes/Locations'
 require_relative 'Classes/Help'
+require_relative 'Modules/Locations'
+require_relative 'Modules/Man'
+
+# Constants
+require_relative 'Classes/Mod_locations'
+require_relative 'Classes/Mod_man'
+
+c_intro = Mod_locations.new
+c_beach = Mod_locations.new
+c_help = Mod_man.new
+c_puts = Mod_man.new
 
 FastGettext.available_locales = [ 'en', 'pl' ]
 FastGettext.add_text_domain('rubycoast', :path=>'locale', :type=>:po)
@@ -25,12 +36,12 @@ while FastGettext.locale.replace(STDIN.gets.downcase)
 end
 
 # Locations
-intro = Location.new('intro', _("Welcome in the Ruby Coast world. It's time to begin the incredible adventure... playing game and learning Ruby in the same time. All game interaction you do will be the Ruby code in fact. Remember that you can use HELP any time you need, you just need to type: help Have a great adventure!"))
-
-beach = Location.new('beach', _("The taste of salt ... You are licking your chapped and salty lips, your face wince due the terrible discomfort. You are thirsty and pretty confused. You can hear the squeaky coastal birds sounds not so far away. Trying to open your eyes and figure out what is going out around. Salty burning sludge gets into your eyes. You are trying to wipe your eyes with wet patch of your sleeve, finally you can get your eyes opened and see the landscape contour around you."))
+intro = Location.new('intro', _("#{c_intro.intro_str}"))
+beach = Location.new('beach', _("#{c_beach.beach_str}"))
 
 # Man
-puts = Help.new('puts', 'Man page: puts', _("Usage: puts\n puts \"string to be displayed\"\n So you can print any string you type inside the quotes without any modification\n Example: puts \"I see the scary purpleeye dragon just next to me!\"\n After press enter you will see on the screen:\n I see the scary purpleeye dragon just next to me!"), 'ruby-syntax')
+puts = Help.new('puts', 'Man page: puts', _("#{c_puts.puts_str}"), 'ruby-syntax')
+help = Help.new('help', 'Man page: help', _("#{c_help.help_str}"), 'ruby-syntax')
 
 puts intro.desc
 puts "Redy? y/n"
