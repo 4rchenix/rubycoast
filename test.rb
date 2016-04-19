@@ -7,10 +7,26 @@ require 'fast_gettext'
 # Classes
 require_relative 'Classes/Locations'
 require_relative 'Classes/Help'
-require_relative 'Locations'
-require_relative 'Man'
-require_relative 'Translate'
+require_relative 'Modules/Locations'
+require_relative 'Modules/Man'
 
+# Constants
+class Modular
+  include Locations
+  include Man
+end
+
+c_intro = Modular.new
+c_beach = Modular.new
+c_help = Modular.new
+c_puts =Modular.new
+
+#puts _("#{intro.intro_str}")
+
+FastGettext.available_locales = [ 'en', 'pl' ]
+FastGettext.add_text_domain('rubycoast', :path=>'locale', :type=>:po)
+FastGettext.text_domain = 'rubycoast'
+FastGettext.locale = 'en'
 include FastGettext::Translation
 
 puts "Choose your language: en pl\n"
@@ -22,6 +38,14 @@ while FastGettext.locale.replace(STDIN.gets.downcase)
       puts _("Sorry but language you choose is not supported, try again. Acceptable languages: en pl")
     end
 end
+
+# Locations
+intro = Location.new('intro', _("#{c_intro.intro_str}"))
+beach = Location.new('beach', _("#{c_beach.beach_str}"))
+
+# Man
+puts = Help.new('puts', 'Man page: puts', _("#{c_puts.puts_str}"), 'ruby-syntax')
+puts = Help.new('help', 'Man page: help', _("#{c_help.help_str}"), 'ruby-syntax')
 
 puts intro.desc
 puts "Redy? y/n"
