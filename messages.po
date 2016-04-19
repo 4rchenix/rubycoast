@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: beach.rb:52
+msgid ", you whispered hoarsely voice."
+msgstr ""
+
+#: beach.rb:57
+msgid "Did you stucked dumb? If you need any help just type \"help\""
+msgstr ""
+
+#: beach.rb:47
+msgid "Look around and describe what you see. Please type: puts \"I see ...\" "
+msgstr ""
+
+#: beach.rb:31
+msgid "Sorry but language you choose is not supported, try again. Acceptable languages: en pl"
+msgstr ""
+
+#: beach.rb:22
+msgid "The taste of salt ... You are licking your chapped and salty lips, your face wince due the terrible discomfort. You are thirsty and pretty confused. You can hear the squeaky coastal birds sounds not so far away. Trying to open your eyes and figure out what is going out around. Salty burning sludge gets into your eyes. You are trying to wipe your eyes with wet patch of your sleeve, finally you can get your eyes opened and see the landscape contour around you."
+msgstr ""
+
+#: beach.rb:20
+msgid "Welcome in the Ruby Coast world. It's time to begin the incredible adventure... playing game and learning Ruby in the same time. All game interaction you do will be the Ruby code in fact. Remember that you can use HELP any time you need, you just need to type: help Have a great adventure!"
+msgstr ""
