@@ -3,7 +3,6 @@
 # Gems
 require 'rubygems'
 require 'fast_gettext'
-#require 'i18n'
 
 # Classes
 require_relative 'Classes/Locations'
@@ -30,6 +29,9 @@ intro = Location.new('intro', _("Welcome in the Ruby Coast world. It's time to b
 
 beach = Location.new('beach', _("The taste of salt ... You are licking your chapped and salty lips, your face wince due the terrible discomfort. You are thirsty and pretty confused. You can hear the squeaky coastal birds sounds not so far away. Trying to open your eyes and figure out what is going out around. Salty burning sludge gets into your eyes. You are trying to wipe your eyes with wet patch of your sleeve, finally you can get your eyes opened and see the landscape contour around you."))
 
+# Man
+puts = Help.new('puts', 'Man page: puts', _("Usage: puts\n puts \"string to be displayed\"\n So you can print any string you type inside the quotes without any modification\n Example: puts \"I see the scary purpleeye dragon just next to me!\"\n After press enter you will see on the screen:\n I see the scary purpleeye dragon just next to me!"), 'ruby-syntax')
+
 puts intro.desc
 puts "Redy? y/n"
 while start = STDIN.gets.downcase
@@ -47,10 +49,11 @@ while beach_start = (STDIN.gets)
   beach_start.chop!
   if beach_start.match(/^puts\ "/)
     beach_start.slice! "puts "
-    puts beach_start _(", you whispered hoarsely voice.")
+    whisper = [ beach_start, _(", you whispered hoarsely voice.") ].join
+    puts whisper
     break
   elsif beach_start == "help"
-    puts help.usage
+    puts puts.usage
   else
     puts _("Did you stucked dumb? If you need any help just type \"help\"")
   end
