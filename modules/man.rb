@@ -7,3 +7,7 @@ module Man
     @puts_str = "Usage: puts\n puts \"string to be displayed\"\n So you can print any string you type inside the quotes without any modification\n Example: puts \"I see the scary purpleeye dragon just next to me!\"\n After press enter you will see on the screen:\n I see the scary purpleeye dragon just next to me!"
   end
 end
+
+class Mod_man
+  include Man
+end

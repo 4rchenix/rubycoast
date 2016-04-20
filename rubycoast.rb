@@ -10,10 +10,6 @@ require_relative 'Classes/Help'
 require_relative 'Modules/Locations'
 require_relative 'Modules/Man'
 
-# Constants
-require_relative 'Classes/Mod_locations'
-require_relative 'Classes/Mod_man'
-
 c_intro = Mod_locations.new
 c_beach = Mod_locations.new
 c_help = Mod_man.new

@@ -40,3 +40,6 @@ msgstr "Smak soli... Oblizując spierzchnięte od wody usta, wykrzywiasz je w gr
 #: beach.rb:20
 msgid "Welcome in the Ruby Coast world. It's time to begin the incredible adventure... playing game and learning Ruby in the same time. All game interaction you do will be the Ruby code in fact. Remember that you can use HELP any time you need, you just need to type: help Have a great adventure!"
 msgstr "Witaj w świecie Ruby Coast. Czas rozpocząć niewiarygodną przygodę... grając i ucząc się Ruby w tym samym czasie. Wszelkie interakcje z grą, które wykonasz, w rzeczywistości będą kodem Ruby. Pamiętaj że w każdym momencie możesz skorzystać z POMOCY, wystarczy że wpiszesz: help Niech to będzie wspaniała przygoda!"
+
+msgid "Usage: puts\n puts \"string to be displayed\"\n So you can print any string you type inside the quotes without any modification\n Example: puts \"I see the scary purpleeye dragon just next to me!\"\n After press enter you will see on the screen:\n I see the scary purpleeye dragon just next to me!"
+msgstr "Usage: puts\n puts \"tekst który chcesz wyslietlić\"\n Za pomocą puts możesz wyświetlić każdy tekst umiesszczony w cudzysłowach\n Przykład: puts \"Widzę strasznego purpurowookiego smoka naprzeciw mnie!\"\n Gdy wcisniesz enter, zobaczysz na ekranie:\n Widzę strasznego purpurowookiego smoka naprzeciw mnie!"

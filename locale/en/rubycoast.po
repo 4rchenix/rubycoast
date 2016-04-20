@@ -39,4 +39,3 @@ msgstr "you whispered hoarsely voice.)"
 
 msgid "Sorry but language you choose is not supported, try again. Acceptable languages: en pl"
 msgstr "Sorry but language you choose is not supported, try again. Acceptable languages: en pl"
-
