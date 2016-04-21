@@ -52,3 +52,6 @@ msgstr = "właśnie utworzyłeś/aś klasę: "
 
 msgid  = "Probably you need some help. To see man page for this exercise type: help"
 msgstr = "Chyba potrzebujesz małej pomocy. By zobaczyc stronę manuala dla tego ćwiczenia, wpisz: help"
+
+msgid = "Usage: class\n 1. Class name neends to be capitalized.\n 2. class_accessor lists all class attributes.\n 3. Next you need initialize class attributes.\n class Class_name\n \  attr_accessor :name, :description\n \    @name = \"attr name\"\n \    @description = \"some description or short name\"\n \  end\n end\n"
+msgstr = "Usage: class\n 1. Nazwa klasy musi zaczynać się wielką literą.\n 2. class_accessor listuje wszystkie atrybuty klasy.\n 3. Następnie inicjalizujemy atrybuty klasy.\n class Nazwa_klasy\n \  attr_accessor :nazwa, :opis\n \    @nazwa = \"nazwa atrybutu\"\n \    @opis = \"opis lub krótka nazwa\"\n \  end\n end\n"

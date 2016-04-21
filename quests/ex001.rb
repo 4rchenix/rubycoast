@@ -1,13 +1,17 @@
 require_relative '../Classes/Character'
+require_relative '../Classes/Help'
 require_relative '../Modules/Char'
 require_relative '../Modules/Man'
 
 c_character = Mod_char.new
 c_addclass = Mod_char.new
 c_exhelp = Mod_char.new
+c_classhelp = Mod_man.new
 character = _("#{c_character.character_str}")
 addclass = _("#{c_character.addclass_str}")
 exhelp = _("#{c_character.exhelp_str}")
+#classhelp = _("#{c_classhelp.class_str}")
+classes = Help.new('class', 'Man page: class', _("#{c_classhelp.class_str}"), 'ruby-syntax')
 puts character
 
 if File.exist?('classes/ex001.rb')
@@ -27,7 +31,7 @@ while ex001 = (STDIN.gets)
     puts "#{addclass}"+"class "+"#{ex001}"
     break
   elsif ex001 == "help"
-    puts ruby_class.usage
+    puts classes.usage
   else
     puts exhelp
   end
