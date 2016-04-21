@@ -1,9 +1,9 @@
 class Character
-  attr_accessor :name, :race, :class, :unique
-  def initialize(name, rase, profession, unique)
+  attr_accessor :name, :race, :profession, :trait
+  def initialize(name, race, profession, trait)
     @name = name
-    @rase = rase
+    @race = race
     @profession = profession
-    @unique = unique
+    @trait = trait
   end
 end

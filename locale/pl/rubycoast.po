@@ -43,3 +43,12 @@ msgstr "Witaj w świecie Ruby Coast. Czas rozpocząć niewiarygodną przygodę..
 
 msgid "Usage: puts\n puts \"string to be displayed\"\n So you can print any string you type inside the quotes without any modification\n Example: puts \"I see the scary purpleeye dragon just next to me!\"\n After press enter you will see on the screen:\n I see the scary purpleeye dragon just next to me!"
 msgstr "Usage: puts\n puts \"tekst który chcesz wyslietlić\"\n Za pomocą puts możesz wyświetlić każdy tekst umiesszczony w cudzysłowach\n Przykład: puts \"Widzę strasznego purpurowookiego smoka naprzeciw mnie!\"\n Gdy wcisniesz enter, zobaczysz na ekranie:\n Widzę strasznego purpurowookiego smoka naprzeciw mnie!"
+
+msgid "You are going to create your game character right now. The first thing you are going to do is preparing the character class which will hold the basic information about your character. Lets say that the character will...\n -have a name\n -have a race\n -have a class (profession)\n -have character trait (trait)\n To collect all this attributes associated with your character we will need a class definition. Lets try to write one now:\n At first we need a class name. Create you own class as folowing: class Character\n"
+msgstr "Za chwilę przystąpisz do tworzenia swojej postaci. Pierwszą rzecza którą zamierzasz zrobić jest przygotowanie klasy postaci, która określi podstawowe cechy postaci. Powiedzmy że postać ma...\n -imię (name)\n -rasę (race)\n -profesję (profession)\n -cechę charakteru (trait)\n By przechowywać atrybuty twojej postaci będziemy potrzebowali zdefiniowanej klasy. Spróbujmy napisać teraz jedną:\n Na poczatek będzie nam potrzebna nazwa dla naszej klasy. Utwórz własną klasę następująco: class Character\n"
+
+msgid  = "you just created class: "
+msgstr = "właśnie utworzyłeś/aś klasę: "
+
+msgid  = "Probably you need some help. To see man page for this exercise type: help"
+msgstr = "Chyba potrzebujesz małej pomocy. By zobaczyc stronę manuala dla tego ćwiczenia, wpisz: help"

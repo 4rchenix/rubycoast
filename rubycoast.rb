@@ -3,12 +3,16 @@
 # Gems
 require 'rubygems'
 require 'fast_gettext'
+require 'fileutils'
 
 # Classes
 require_relative 'Classes/Locations'
 require_relative 'Classes/Help'
 require_relative 'Modules/Locations'
 require_relative 'Modules/Man'
+
+# Dirs required
+#Dir['./classes/*.rb'].each{ |f| require f }
 
 c_intro = Mod_locations.new
 c_beach = Mod_locations.new
@@ -50,21 +54,5 @@ while start = STDIN.gets.downcase
   end
 end
 
-puts "You are going to create your game character right now. The first thing you are going to do is preparing the character class which will hold the basic information about your character. Lets say that the character will...\n -have a name\n -have a race\n -have a class (profession)\n -have character trait (unique)\n To collect all this attributes associated with your character we will need a class definition. Lets try to write one now:\n At first we need a class name. Create you own class as folowing: class Character\n"
-
-while ex001 = (STDIN.gets)
-  ex001.chop!
-  var = nil
-  if (ex001.match(/^class\ /))
-    var1 = true
-  end
-  ex001.slice! "class "
-  if [(var1.eql? true), (ex001.eql? ex001.capitalize), (!ex001.empty?)].all?
-    puts "you just created class: class #{ex001}"
-    break
-  elsif ex001 == "help"
-    puts ruby_class.usage
-  else
-    puts "Probably you need some help. To see man page for this exercise type: help"
-  end
-end
+#system("ruby ex01.rb")
+load 'quests/ex001.rb'
