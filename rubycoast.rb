@@ -54,11 +54,12 @@ puts "You are going to create your game character right now. The first thing you
 
 while ex001 = (STDIN.gets)
   ex001.chop!
+  var = nil
   if (ex001.match(/^class\ /))
     var1 = true
   end
   ex001.slice! "class "
-  if ((var1 == true) && (ex001.capitalize == ex001) && (!ex001.nil?))
+  if [(var1.eql? true), (ex001.eql? ex001.capitalize), (!ex001.empty?)].all?
     puts "you just created class: class #{ex001}"
     break
   elsif ex001 == "help"
